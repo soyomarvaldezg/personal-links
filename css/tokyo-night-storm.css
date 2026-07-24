@@ -56,15 +56,7 @@
   background-color: #343a5c;
 }
 
-/* Force all icon SVGs to use the theme text color for consistency */
-:root.theme-dark .icon path,
-:root.theme-dark .icon circle,
-:root.theme-dark .icon rect,
-:root.theme-dark .icon ellipse,
-:root.theme-dark .icon polygon {
-  fill: currentColor;
-}
-
+/* Force all icon SVGs (loaded as <img>) to render in Tokyo Night blue */
 :root.theme-dark .icon {
-  color: #7aa2f7;
+  filter: brightness(0) saturate(100%) invert(47%) sepia(79%) saturate(444%) hue-rotate(199deg) brightness(93%) contrast(88%);
 }
