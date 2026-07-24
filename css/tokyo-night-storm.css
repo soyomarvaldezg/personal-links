@@ -1,0 +1,61 @@
+/*
+ * Tokyo Night Storm theme override for LittleLink
+ * https://littlelink.io
+ */
+
+:root.theme-dark {
+  color-scheme: dark;
+}
+
+:root.theme-dark body {
+  background-color: #1f2335;
+  background-image: radial-gradient(circle at top, #24283b 0%, #1a1b26 60%);
+  color: #c0caf5;
+}
+
+:root.theme-dark a:not(.button) {
+  color: #7aa2f7;
+}
+
+:root.theme-dark a:not(.button):hover {
+  color: #7dcfff;
+}
+
+:root.theme-dark :focus-visible {
+  outline: 2px solid #7aa2f7;
+  outline-offset: 2px;
+}
+
+:root.theme-dark .avatar {
+  border: 2px solid #7aa2f7;
+}
+
+:root.theme-dark footer {
+  color: #565f89;
+}
+
+:root.theme-dark footer a {
+  color: #565f89;
+}
+
+:root.theme-dark footer a:hover {
+  color: #7aa2f7;
+}
+
+/* Override brand button colors to use a unified Tokyo Night palette */
+:root.theme-dark .button {
+  --button-text: #c0caf5;
+  --button-background: #292e42;
+  --button-border: 1px solid #414868;
+}
+
+:root.theme-dark .button:hover {
+  --button-text: #c0caf5;
+  filter: none;
+  border-color: #7aa2f7;
+  background-color: #343a5c;
+}
+
+:root.theme-dark .icon {
+  filter: brightness(0) saturate(100%) invert(75%) sepia(15%) saturate(1200%) hue-rotate(190deg) brightness(95%) contrast(90%);
+}
