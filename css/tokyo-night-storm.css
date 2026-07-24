@@ -56,6 +56,15 @@
   background-color: #343a5c;
 }
 
+/* Force all icon SVGs to use the theme text color for consistency */
+:root.theme-dark .icon path,
+:root.theme-dark .icon circle,
+:root.theme-dark .icon rect,
+:root.theme-dark .icon ellipse,
+:root.theme-dark .icon polygon {
+  fill: currentColor;
+}
+
 :root.theme-dark .icon {
-  filter: brightness(0) saturate(100%) invert(75%) sepia(15%) saturate(1200%) hue-rotate(190deg) brightness(95%) contrast(90%);
+  color: #7aa2f7;
 }
