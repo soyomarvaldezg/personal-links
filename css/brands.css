@@ -472,6 +472,12 @@
 	--button-background:#ff5500;
 }
 
+/* Credly */
+.button-credly {
+	--button-text:#FFFFFF;
+	--button-background:#FF6B00;
+}
+
 /* Spotify */
 .button-spotify {
 	--button-text:#191414;
