@@ -1,0 +1,119 @@
+@font-face {
+  font-family: "VD Code";
+  src: url("../fonts/SourceCodePro.ttf") format("truetype");
+  font-weight: 200 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "VD Sans";
+  src: url("../fonts/DMSans.ttf") format("truetype");
+  font-weight: 100 1000;
+  font-display: swap;
+}
+
+:root {
+  --vd-server: #2D3141;
+  --vd-blueprint: #CFDDE6;
+  --vd-fiber: #08829C;
+  --vd-mint: #A3F0CE;
+  --vd-muted: #A9B8C6;
+}
+
+:root.theme-dark body {
+  background-color: var(--vd-server);
+  background-image: none;
+  color: var(--vd-blueprint);
+  font-family: "VD Sans", system-ui, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+:root.theme-dark h1,
+:root.theme-dark h2,
+:root.theme-dark h3 {
+  font-family: "VD Code", "Source Code Pro", monospace;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.15;
+}
+
+:root.theme-dark h1 {
+  font-size: clamp(28px, 7vw, 38px);
+}
+
+:root.theme-dark .container p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+:root.theme-dark a:not(.button) {
+  color: var(--vd-blueprint);
+}
+
+:root.theme-dark a:not(.button):hover {
+  color: #ffffff;
+}
+
+:root.theme-dark :focus-visible {
+  outline: 2px solid var(--vd-blueprint);
+  outline-offset: 3px;
+}
+
+:root.theme-dark footer {
+  color: var(--vd-muted);
+  font-family: "VD Code", "Source Code Pro", monospace;
+  font-size: 13px;
+}
+
+:root.theme-dark .column > p:first-of-type {
+  font-family: "VD Code", "Source Code Pro", monospace;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--vd-blueprint);
+}
+
+:root.theme-dark .avatar {
+  border: 2px solid var(--vd-fiber);
+}
+
+:root.theme-dark .button {
+  --button-text: var(--vd-server);
+  --button-background: var(--vd-blueprint);
+  --button-border: 1px solid var(--vd-blueprint);
+  border-radius: 4px;
+  font-family: "VD Sans", system-ui, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  width: 100%;
+  max-width: 18.75rem;
+}
+
+:root.theme-dark .button:hover {
+  --button-text: var(--vd-server);
+  --button-background: #ffffff;
+  filter: none;
+  transform: none;
+}
+
+:root.theme-dark .button-default .icon,
+:root.theme-dark .button-substack .icon,
+:root.theme-dark .button-github .icon,
+:root.theme-dark .button-linked .icon,
+:root.theme-dark .button-x .icon,
+:root.theme-dark .button-instagram .icon {
+  filter: brightness(0) saturate(100%);
+}
+
+.button-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+@media (max-width: 700px) {
+  :root.theme-dark .column > p:first-of-type {
+    font-size: 18px;
+  }
+}
